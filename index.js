@@ -8,10 +8,10 @@ app.use(express.json());
 //ROUTES//
 
 // register and login routes
-app.use("/auth", require("../routes/jwtAuth"));
+app.use("/auth", require("../server/routes/jwtAuth"));
 
 //Dashboard Routes
-app.use("/dashboard", require("../routes/dashboard"));
+app.use("/dashboard", require("../server/routes/dashboard"));
 app.listen(5000, () => {
   console.log("Server started at port 5000");
 });
